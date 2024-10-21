@@ -1,4 +1,4 @@
-public class Tarea{
+/*public class Tarea{
     private String name;
     private String description;
     private String date;
@@ -43,4 +43,4 @@ public class Tarea{
                 "Fecha: " + this.date +"\n"+ 
                 "Estado: " + p +"\n";
     }
-}
+}*/
