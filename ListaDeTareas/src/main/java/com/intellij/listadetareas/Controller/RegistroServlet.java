@@ -22,7 +22,7 @@ public class RegistroServlet extends HttpServlet {
             resp.sendRedirect(req.getContextPath() + "/vistaServlet");
         } else {
             session.setAttribute("mensaje", "Registro incorrecto");
-            resp.sendRedirect(req.getContextPath() + "/index.jsp");
+            resp.sendRedirect(req.getContextPath() + "/registro.jsp");
         }
     }
 }

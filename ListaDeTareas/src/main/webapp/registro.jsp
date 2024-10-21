@@ -12,6 +12,7 @@
 
 <%
     String mensajeError = (session != null) ? (String) session.getAttribute("mensaje") : null;
+    String ruta = request.getContextPath();
     if (session != null) {
         if (mensajeError != null) {
 %>
@@ -21,7 +22,7 @@
         }
     }
 %>
-
+<a href="<%=ruta%>/menu.jsp">Regresar</a>
 <form id="registroTarea" action="registroServlet" method="post">
     <label for="nombre">Introduce el nombre</label>
     <input id="nombre" type="text" maxlength="50" name="nombre" placeholder="Ingresa el nombre">
