@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.io.FileWriter;
 import java.io.BufferedWriter;
 import java.io.IOException;
-
+//Logica
 public class Controlador {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
