@@ -7,12 +7,12 @@ public class Tarea {
 
     private String nombre;
     private String descripcion;
-    private Date fecha;
+    private String fecha;
     // true = pendiente, false = hecho
     private boolean pendiente;
 
     // Constructor completo con todos los atributos
-    public Tarea(String nombre, String descripcion, Date fecha, boolean pendiente) {
+    public Tarea(String nombre, String descripcion, String fecha, boolean pendiente) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.fecha = fecha;
@@ -27,7 +27,7 @@ public class Tarea {
         return descripcion;
     }
 
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
