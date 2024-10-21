@@ -6,9 +6,23 @@
     <title>Agregar tarea</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 <body>
-<form action="registroServlet" method="post">
+
+<%
+    String mensajeError = (session != null) ? (String) session.getAttribute("mensaje") : null;
+    if (session != null) {
+        if (mensajeError != null) {
+%>
+<input type="hidden" value="<%=mensajeError%>" id="error">
+<%
+            session.removeAttribute("mensaje");
+        }
+    }
+%>
+
+<form id="registroTarea" action="registroServlet" method="post">
     <label for="nombre">Introduce el nombre</label>
     <input id="nombre" type="text" maxlength="50" name="nombre" placeholder="Ingresa el nombre">
     <br>
@@ -21,8 +35,9 @@
     <input id="fecha" type="date" name="fecha">
     <br>
     <br>
-    <button type="submit">Registrar tarea</button>
+    <button id="registrar" type="submit">Registrar tarea</button>
 </form>
 <script src="js/bootstrap.js"></script>
+<script src="js/formularioTareas.js"></script>
 </body>
 </html>
