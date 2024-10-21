@@ -1,4 +1,4 @@
-package com.intellij.listadetareas;
+package com.intellij.listadetareas.Logica;
 /*
 import java.util.List;
 import java.util.LinkedList;
@@ -19,19 +19,20 @@ public class Main {
     public static void main(String[] args) {
         // Instalar mi linkedlist de tareas
 
-        /*
-         * Tarea tareaUan = new Tarea("Lavar la ropa", "Hay que lavar la ropa",
-         * "24/05/2021", true);
-         * Tarea tareaTwo = new Tarea("Sacar la basura", "El camion pasa a las 7:00 am",
-         * "14/10/2024", true);
-         * 
-         * lista.add(tareaUan);
-         * lista.add(tareaTwo);
-         * imprimirArchivo(lista);
-         */
+
+          Tarea tareaUan = new Tarea("Lavar la ropa", "Hay que lavar la ropa",
+          "24/05/2021", true);
+          Tarea tareaTwo = new Tarea("Sacar la basura", "El camion pasa a las 7:00 am",
+          "14/10/2024", true);
+
+          lista.add(tareaUan);
+          lista.add(tareaTwo);
+          imprimirArchivo(lista);
+
         // Un ciclo infinito donde hay opciones de menú
         // while()
         // switch()
+
         boolean salir = true;
         while (salir) {
             System.out.println(

@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 denyButtonText: `No guardar`
             }).then((result) => {
                 if (result.isConfirmed) {
-                        form.submit();
+                    form.submit();
                 } else if (result.isDenied) {
                     Swal.fire("Los cambios no se han guardado", "", "error").then(() => {
                     });
@@ -34,20 +34,17 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     });
-});
-/*
-const errorElement = document.getElementById('error');
-const rutaElement = document.getElementById('ruta');
-if (errorElement && rutaElement) {
-    const errorMessage = errorElement.value;
-    const ruta = rutaElement.value;
-    if (errorMessage && ruta) {
-        Swal.fire({
-            icon: 'error',
-            title: 'Error',
-            text: errorMessage
-        }).then(() => {
-            window.location.href = ruta;
-        });
+    const errorElement = document.getElementById('error');
+    if (errorElement) {
+        const errorMessage = errorElement.value;
+        if (errorMessage) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: errorMessage
+            }).then(() => {
+            });
+        }
     }
-}*/
+});
+
