@@ -12,6 +12,7 @@
 
 <%
     String mensajeError = (session != null) ? (String) session.getAttribute("mensaje") : null;
+    String ruta = request.getContextPath();
     if (session != null) {
         if (mensajeError != null) {
 %>
@@ -21,6 +22,7 @@
         }
     }
 %>
+<<<<<<< HEAD:ListaDeTareas/src/main/webapp/index.jsp
 
 /* Estilo general del body */
 body {
@@ -68,3 +70,25 @@ label {
     margin: 10px 0 5px; /* Margen superior e inferior */
 
 }
+=======
+<a href="<%=ruta%>/menu.jsp">Regresar</a>
+<form id="registroTarea" action="registroServlet" method="post">
+    <label for="nombre">Introduce el nombre</label>
+    <input id="nombre" type="text" maxlength="50" name="nombre" placeholder="Ingresa el nombre">
+    <br>
+    <br>
+    <label for="descripcion">Introduce la descripción</label>
+    <input id="descripcion" type="text" maxlength="120" name="descripcion" placeholder="Ingresa la descripción">
+    <br>
+    <br>
+    <label for="fecha">Selecciona la fecha</label>
+    <input id="fecha" type="date" name="fecha">
+    <br>
+    <br>
+    <button id="registrar" type="submit">Registrar tarea</button>
+</form>
+<script src="js/bootstrap.js"></script>
+<script src="js/formularioTareas.js"></script>
+</body>
+</html>
+>>>>>>> f875dbf1abee1e6918152ebe553490a74c71e323:ListaDeTareas/src/main/webapp/registro.jsp
