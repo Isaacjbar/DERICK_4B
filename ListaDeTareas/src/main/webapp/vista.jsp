@@ -14,6 +14,7 @@
 
 <%
     List<Tarea> tareas = (List<Tarea>) session.getAttribute("tareas");
+    String ruta = request.getContextPath();
 %>
 
 <ul class="nav nav-tabs mb-4" role="tablist">
@@ -24,7 +25,7 @@
         <a class="nav-link active" data-toggle="tab" href="#tareas_realizadas" role="tab">Tareas realizadas</a>
     </li>
     <li>
-        <a href="/menu.jsp">Regresar</a>
+        <a href="<%=ruta%>/menu.jsp">Regresar</a>
     </li>
 </ul>
 
