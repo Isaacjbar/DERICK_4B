@@ -1,7 +1,7 @@
 package com.intellij.listadetareas.Controller;
 
 import com.intellij.listadetareas.Model.Tarea;
-import com.intellij.listadetareas.Util.TareasList;
+import com.intellij.listadetareas.Dao.TareasList;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.List;
 
 @WebServlet(value = "/vistaServlet")
-public class vistaServlet extends HttpServlet {
+public class VistaServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
 
@@ -21,6 +21,7 @@ public class vistaServlet extends HttpServlet {
         List<Tarea> tareas = tareasList.getTareas();
 
         session.setAttribute("tareas", tareas);
+        session.setAttribute("pendientes", tareasList.getPendientes());
         resp.sendRedirect(req.getContextPath() + "/vista.jsp");
     }
 }

@@ -1,4 +1,6 @@
 package com.intellij.listadetareas.Controller;
+
+import com.intellij.listadetareas.Dao.TareasList;
 import com.intellij.listadetareas.Model.Tarea;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
@@ -9,11 +11,10 @@ import java.util.List;
 
 @WebServlet("/descargarTxt")
 public class DescargarTxtServlet extends HttpServlet {
-    @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // Obtener la lista de tareas de la sesión
-        HttpSession session = req.getSession();
-        List<Tarea> listaTareas = (List<Tarea>) session.getAttribute("listaTareas");
+        TareasList tareasList = new TareasList();
+        List<Tarea> listaTareas = tareasList.getTareas();
 
         // Configurar la respuesta como archivo de texto
         resp.setContentType("text/plain");

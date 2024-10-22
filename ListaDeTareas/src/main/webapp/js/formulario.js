@@ -34,17 +34,5 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     });
-    const errorElement = document.getElementById('error');
-    if (errorElement) {
-        const errorMessage = errorElement.value;
-        if (errorMessage) {
-            Swal.fire({
-                icon: 'error',
-                title: 'Error',
-                text: errorMessage
-            }).then(() => {
-            });
-        }
-    }
-});
 
+});
