@@ -6,11 +6,9 @@
     <title>Agregar tarea</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
-<body>
-
 <%
     String mensajeError = (session != null) ? (String) session.getAttribute("mensaje") : "";
     String tipoMensaje = (session != null) ? (String) session.getAttribute("tipo") : "";
@@ -26,7 +24,10 @@
         }
     }
 %>
-<a href="<%=ruta%>/menu.jsp">Regresar</a>
+<header>
+    <a href="<%=ruta%>/menu.jsp">Regresar</a>
+</header>
+<body>
 <form id="registroTarea" action="registroServlet" method="post">
     <label for="nombre">Introduce el nombre</label>
     <input id="nombre" type="text" maxlength="50" name="nombre" placeholder="Ingresa el nombre">
