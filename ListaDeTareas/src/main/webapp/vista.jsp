@@ -12,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="css/vista.css">
 </head>
 <body>
 <%
@@ -34,7 +35,12 @@
         }
     }
 %>
-<ul class="nav nav-tabs mb-4" role="tablist">
+
+<div class="left-button">
+    <a href="<%=ruta%>/menu.jsp" class="left-button">Regresar</a>
+</div>
+
+<ul class="nav nav-tabs mb-4 centered-tabs" role="tablist">
     <li class="nav-item">
         <a class="nav-link active" id="tareas-pendientes-tab" data-toggle="tab" href="#tareas-pendientes" role="tab"
            aria-controls="tareas-pendientes" aria-selected="true">Tareas pendientes</a>
@@ -43,14 +49,11 @@
         <a class="nav-link" id="tareas-realizadas-tab" data-toggle="tab" href="#tareas-realizadas" role="tab"
            aria-controls="tareas-realizadas" aria-selected="false">Tareas realizadas</a>
     </li>
-    <li class="nav-item">
-        <a href="<%=ruta%>/menu.jsp" class="nav-link">Regresar</a>
-    </li>
-    <li>
-        <p><strong>Tareas pendientes: </strong><%=pendientes%>
-        </p>
-    </li>
 </ul>
+
+<div class="right-aligned">
+    <strong>Tareas pendientes: </strong><%=pendientes%>
+</div>
 
 <div class="tab-content">
     <div class="tab-pane fade show active" id="tareas-pendientes" role="tabpanel"
@@ -122,6 +125,7 @@
         </div>
     </div>
 </div>
+
 <script src="js/alertas.js"></script>
 <script src="js/eliminar.js"></script>
 <script src="js/actualizar.js"></script>

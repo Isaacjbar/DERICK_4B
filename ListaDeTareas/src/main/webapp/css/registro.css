@@ -1,0 +1,94 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif; /* Cambia la fuente a 'Poppins' si está disponible */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(255, 153, 179, 0.21); /* Color de fondo rosado suave con transparencia */
+}
+
+.container {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 12px; /* Aumenta el radio de los bordes para redondear más */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Aplica una sombra más definida */
+    width: 100%;
+    max-width: 350px; /* Se aumenta ligeramente el ancho máximo */
+}
+
+h1 {
+    text-align: center;
+    color: #333; /* Mantiene el color gris oscuro para el texto del encabezado */
+    font-size: 1.8rem; /* Aumenta el tamaño de fuente del título */
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #666; /* Mantiene el color gris claro para las etiquetas */
+    font-size: 1rem; /* Se ajusta el tamaño de la fuente de las etiquetas */
+}
+
+label::after {
+    content: " *";
+    color: #ff6666; /* Cambia el color del asterisco a rosado oscuro */
+}
+
+input {
+    padding: 0.6rem;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Redondea más los bordes de los campos de entrada */
+    font-size: 0.9rem;
+    transition: border-color 0.3s ease; /* Añade una transición suave al enfocar */
+}
+
+input:focus {
+    border-color: #ff9999; /* Cambia el borde a un color rosado cuando el campo está enfocado */
+    outline: none; /* Elimina el contorno estándar del navegador */
+}
+
+button {
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.2rem; /* Aumenta el padding del botón */
+    background-color: #ff6666; /* Aplica un color rosado oscuro al botón */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Redondea más el botón */
+    cursor: pointer;
+    font-size: 0.9rem; /* Aumenta el tamaño de la fuente del botón */
+    align-self: center;
+    transition: background-color 0.3s ease; /* Añade una transición suave para el cambio de color */
+}
+
+button:hover {
+    background-color: #ff4d4d; /* Cambia el color del botón a un tono más oscuro cuando se pasa el ratón por encima */
+}
+
+.back-link {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: #ff6666; /* Cambia el color del enlace de regreso a rosado oscuro */
+    text-decoration: none;
+    font-size: 1.1rem;
+
+}
+
+.back-link:hover {
+    text-decoration: underline; /* Añade subrayado cuando se pasa el ratón por encima */
+}
+
+.required-field-note {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 1.2rem;
+    text-align: center;
+}

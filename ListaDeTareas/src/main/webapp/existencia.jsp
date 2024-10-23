@@ -4,6 +4,7 @@
     <title>Existencia y estado de una tarea</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/buscar.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 <%
@@ -21,16 +22,15 @@
     }
 %>
 <body>
-<a href="<%=request.getContextPath()%>/menu.jsp">Regresar</a>
+<a href="<%=request.getContextPath()%>/menu.jsp" class="back-link">Regresar</a>
+<div class="container">
+    <h1>Búsqueda de Tareas</h1>
 <form id="buscarForm" action="verificarTareaServlet" method="post">
     <label for="tarea">Ingresa el nombre de la tarea</label>
-    <br>
-    <br>
     <input type="text" id="tarea" name="tarea" maxlength="50" placeholder="Ingresa el nombre de la tarea">
-    <br>
-    <br>
     <button type="submit" id="buscarButton">Buscar</button>
 </form>
+</div>
 <script src="js/buscar.js"></script>
 </body>
 </html>
