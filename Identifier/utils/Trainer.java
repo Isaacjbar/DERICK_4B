@@ -1,19 +1,18 @@
 import model.Node;
 import structures.BinaryTree;
-import model.DataGenerator;
 
 public class Trainer {
     public static BinaryTree<String> trainTree(int numberOfDataPoints) {
         BinaryTree<String> tree = null;
         for (int i = 0; i < numberOfDataPoints; i++) {
             Node<String> creature = DataGenerator.generateRandomCreature();
-            
-            // Validar que las propiedades del nodo sean lógicas antes de agregarlo
+
+            // Validate that the node's properties are logical before adding it
             if (isConsistent(creature)) {
                 if (tree == null) {
                     tree = new BinaryTree<>(creature);
                 } else {
-                    tree.insert(creature, "Size"); // El criterio puede ajustarse si es necesario
+                    tree.insert(creature, "Size"); // The criterion can be adjusted if needed
                 }
             } else {
                 System.out.println("Inconsistent data point detected, skipping...");
@@ -22,12 +21,11 @@ public class Trainer {
         return tree;
     }
 
-    // Método de validación de coherencia
     private static boolean isConsistent(Node<String> node) {
         String species = node.getSpecies();
         String skinType = node.getProperty("Skin Type");
-        
-        // Validar coherencia según las especies y tipos de piel
+
+        // Validate consistency based on species and skin type
         switch (species) {
             case "Mammal":
                 return skinType.equals("Fur");
