@@ -9,9 +9,19 @@ public class KNNClassifier<T> {
     private BinaryTree<T> tree;
     private int k;
 
+    // Weights for each feature
+    private final Map<String, Double> weights = new HashMap<>();
+
     public KNNClassifier(BinaryTree<T> tree, int k) {
         this.tree = tree;
         this.k = k;
+        
+        // Initialize weights for each feature
+        weights.put("Size", 0.5);       // Less impactful
+        weights.put("Skin Type", 5.0);  // High impact
+        weights.put("Habitat", 3.0);    // Moderate impact
+        weights.put("Diet", 1.0);       // Moderate impact
+        weights.put("Behavior", 0.5);   // Less impactful
     }
 
     public String classify(Node<T> newCreature) {
@@ -38,16 +48,15 @@ public class KNNClassifier<T> {
         for (String key : node1.getProperties().keySet()) {
             T value1 = node1.getProperty(key);
             T value2 = node2.getProperty(key);
+            double weight = weights.getOrDefault(key, 1.0);
 
             if (value1 instanceof String && value2 instanceof String) {
-                // Categorical property comparison
                 if (!value1.equals(value2)) {
-                    distance += 1;
+                    distance += weight * 1;  // Penalization for different categorical properties
                 }
             } else if (value1 instanceof Number && value2 instanceof Number) {
-                // Numerical property comparison (Euclidean distance)
                 double diff = ((Number) value1).doubleValue() - ((Number) value2).doubleValue();
-                distance += diff * diff;
+                distance += weight * (diff * diff);
             }
         }
 
