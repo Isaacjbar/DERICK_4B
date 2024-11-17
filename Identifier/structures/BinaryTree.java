@@ -12,7 +12,7 @@ public class BinaryTree<T> {
     public void insert(Node<T> newNode, String criterion) {
         T currentValue = node.getProperty(criterion);
         T newValue = newNode.getProperty(criterion);
-
+    
         if (newValue.hashCode() < currentValue.hashCode()) {
             if (left == null) {
                 left = new BinaryTree<>(newNode);
@@ -26,7 +26,7 @@ public class BinaryTree<T> {
                 right.insert(newNode, criterion);
             }
         }
-    }
+    }    
 
     public Node<T> getNode() {
         return node;

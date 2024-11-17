@@ -7,14 +7,14 @@ public class DataGenerator {
     private static final Random random = new Random();
 
     public static Node<String> generateRandomCreature() {
-        Map<String, String> properties = new HashMap<>();
         String selectedSpecies = species[random.nextInt(species.length)];
+        Map<String, String> properties = new HashMap<>();
 
         // Define logical characteristics based on species
         switch (selectedSpecies) {
             case "Mammal":
                 properties.put("Size", getRandomValue(new String[]{"Small", "Medium", "Large"}));
-                properties.put("Skin Type", "Fur");  // Only mammals have fur
+                properties.put("Skin Type", "Fur");
                 properties.put("Habitat", getRandomValue(new String[]{"Land", "Water"}));
                 properties.put("Diet", getRandomValue(new String[]{"Herbivore", "Carnivore", "Omnivore"}));
                 properties.put("Behavior", getRandomValue(new String[]{"Nocturnal", "Diurnal"}));
@@ -22,34 +22,34 @@ public class DataGenerator {
 
             case "Bird":
                 properties.put("Size", getRandomValue(new String[]{"Small", "Medium", "Large"}));
-                properties.put("Skin Type", "Feathers");  // Only birds have feathers
+                properties.put("Skin Type", "Feathers");
                 properties.put("Habitat", "Air");
-                properties.put("Diet", getRandomValue(new String[]{"Herbivore", "Carnivore"}));
-                properties.put("Behavior", "Diurnal");
+                properties.put("Diet", getRandomValue(new String[]{"Herbivore", "Carnivore", "Omnivore"}));
+                properties.put("Behavior", getRandomValue(new String[]{"Nocturnal", "Diurnal"}));
                 break;
 
             case "Reptile":
                 properties.put("Size", getRandomValue(new String[]{"Small", "Medium", "Large"}));
-                properties.put("Skin Type", "Scales");  // Only reptiles have scales
+                properties.put("Skin Type", "Scales");
                 properties.put("Habitat", getRandomValue(new String[]{"Land", "Water"}));
-                properties.put("Diet", getRandomValue(new String[]{"Carnivore", "Omnivore"}));
-                properties.put("Behavior", "Nocturnal");
+                properties.put("Diet", getRandomValue(new String[]{"Herbivore", "Carnivore", "Omnivore"}));
+                properties.put("Behavior", getRandomValue(new String[]{"Nocturnal", "Diurnal"}));
                 break;
 
             case "Amphibian":
                 properties.put("Size", getRandomValue(new String[]{"Small", "Medium"}));
-                properties.put("Skin Type", "Moist Skin");  // Amphibians have moist skin
+                properties.put("Skin Type", "Moist Skin");
                 properties.put("Habitat", "Water");
-                properties.put("Diet", "Carnivore");
-                properties.put("Behavior", "Nocturnal");
+                properties.put("Diet", getRandomValue(new String[]{"Carnivore", "Omnivore"}));
+                properties.put("Behavior", getRandomValue(new String[]{"Nocturnal", "Diurnal"}));
                 break;
 
             case "Fish":
                 properties.put("Size", getRandomValue(new String[]{"Small", "Medium", "Large"}));
-                properties.put("Skin Type", "Scales");  // Fish also have scales
+                properties.put("Skin Type", "Scales");
                 properties.put("Habitat", "Water");
                 properties.put("Diet", getRandomValue(new String[]{"Herbivore", "Carnivore", "Omnivore"}));
-                properties.put("Behavior", "Diurnal");
+                properties.put("Behavior", getRandomValue(new String[]{"Nocturnal", "Diurnal"}));
                 break;
 
             case "Invertebrate":
@@ -57,7 +57,7 @@ public class DataGenerator {
                 properties.put("Skin Type", getRandomValue(new String[]{"Exoskeleton", "Soft Body"}));
                 properties.put("Habitat", getRandomValue(new String[]{"Land", "Water"}));
                 properties.put("Diet", getRandomValue(new String[]{"Herbivore", "Carnivore", "Omnivore"}));
-                properties.put("Behavior", "Nocturnal");
+                properties.put("Behavior", getRandomValue(new String[]{"Nocturnal", "Diurnal"}));
                 break;
         }
 

@@ -20,4 +20,9 @@ public class Node<T> {
     public Map<String, T> getProperties() {
         return properties;
     }
+
+    public String getPropertyAsString(String key) {
+        T value = properties.get(key);
+        return value != null ? value.toString() : null;
+    }
 }
