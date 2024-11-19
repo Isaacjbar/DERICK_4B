@@ -70,6 +70,9 @@ body {
     z-index: 2; /* Asegura que el contenido esté sobre el fondo y las olas */
     color: #000000; /* Color de texto negro */
 }
+.title-co{
+    color: #f4f4f9;
+}
 
 /* Botones */
 .buttons button, .card-footer button {
