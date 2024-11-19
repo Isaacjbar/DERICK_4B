@@ -161,18 +161,38 @@ body {
 
 /* Botones Resaltados */
 .btn-outline {
-    background-color: #eb1212;
-    color: #000000; /* Cambiar texto a negro */
+    border: 1px solid #eb1212; /* Borde rojo */
+    color: #000000; /* Texto negro */
+    background-color: transparent; /* Fondo transparente */
+    padding: 10px 20px; /* Tamaño del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Transición para cambios de estilo */
 }
+
+.btn-outline:hover {
+    background-color: #eb1212; /* Fondo rojo al pasar el mouse */
+    color: #ffffff; /* Texto blanco al pasar el mouse */
+}
+
 
 .btn-outline:hover {
     background-color: #eb1212;
 }
 
 .btn-primary {
-    background-color: #00d4ff;
-    color: #000000; /* Cambiar texto a negro */
+    background-color: transparent; /* Fondo transparente */
+    border: 1px solid #00d4ff; /* Borde azul claro */
+    color: #000000; /* Texto negro */
+    padding: 10px 20px; /* Tamaño del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Efecto de transición */
 }
+
+.btn-primary:hover {
+    background-color: #00d4ff; /* Fondo azul claro al pasar el mouse */
+    color: #ffffff; /* Texto blanco al pasar el mouse */
+}
+
 
 .btn-primary:hover {
     background-color: #0288d1;
