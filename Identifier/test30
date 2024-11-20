@@ -1,0 +1,201 @@
+Species,Size,Skin Type,Habitat,Diet,Behavior
+Reptile,Medium,Scales,Water,Omnivore,Diurnal
+Mammal,Medium,Fur,Land,Omnivore,Nocturnal
+Invertebrate,Medium,Exoskeleton,Water,Herbivore,Nocturnal
+Invertebrate,Medium,Exoskeleton,Water,Carnivore,Nocturnal
+Amphibian,Small,Moist Skin,Water,Carnivore,Diurnal
+Reptile,Medium,Scales,Water,Carnivore,Nocturnal
+Amphibian,Small,Moist Skin,Water,Omnivore,Diurnal
+Bird,Medium,Feathers,Air,Omnivore,Nocturnal
+Mammal,Medium,Fur,Land,Herbivore,Diurnal
+Bird,Large,Feathers,Air,Omnivore,Nocturnal
+Mammal,Small,Fur,Water,Carnivore,Nocturnal
+Amphibian,Small,Moist Skin,Water,Omnivore,Nocturnal
+Invertebrate,Medium,Exoskeleton,Water,Herbivore,Nocturnal
+Mammal,Large,Fur,Water,Omnivore,Nocturnal
+Mammal,Large,Fur,Land,Carnivore,Diurnal
+Invertebrate,Medium,Soft Body,Water,Carnivore,Nocturnal
+Invertebrate,Medium,Soft Body,Land,Omnivore,Nocturnal
+Reptile,Small,Scales,Water,Herbivore,Diurnal
+Reptile,Small,Scales,Water,Herbivore,Nocturnal
+Reptile,Large,Scales,Water,Herbivore,Diurnal
+Reptile,Medium,Scales,Land,Herbivore,Diurnal
+Mammal,Medium,Fur,Water,Omnivore,Nocturnal
+Mammal,Large,Fur,Land,Herbivore,Nocturnal
+Amphibian,Medium,Moist Skin,Water,Carnivore,Nocturnal
+Reptile,Small,Scales,Water,Omnivore,Nocturnal
+Fish,Small,Scales,Water,Omnivore,Nocturnal
+Bird,Medium,Feathers,Air,Carnivore,Diurnal
+Invertebrate,Tiny,Exoskeleton,Water,Omnivore,Diurnal
+Mammal,Small,Fur,Water,Omnivore,Nocturnal
+Mammal,Large,Fur,Land,Omnivore,Diurnal
+Amphibian,Medium,Moist Skin,Water,Omnivore,Diurnal
+Amphibian,Medium,Moist Skin,Water,Carnivore,Nocturnal
+Invertebrate,Tiny,Exoskeleton,Water,Herbivore,Nocturnal
+Bird,Large,Feathers,Air,Omnivore,Nocturnal
+Mammal,Large,Fur,Land,Omnivore,Diurnal
+Invertebrate,Medium,Exoskeleton,Water,Herbivore,Diurnal
+Amphibian,Small,Moist Skin,Water,Omnivore,Diurnal
+Amphibian,Small,Moist Skin,Water,Omnivore,Nocturnal
+Bird,Large,Feathers,Air,Carnivore,Diurnal
+Reptile,Large,Scales,Water,Carnivore,Nocturnal
+Reptile,Small,Scales,Water,Herbivore,Nocturnal
+Fish,Medium,Scales,Water,Omnivore,Nocturnal
+Bird,Small,Feathers,Air,Herbivore,Nocturnal
+Amphibian,Medium,Moist Skin,Water,Carnivore,Diurnal
+Bird,Medium,Feathers,Air,Omnivore,Diurnal
+Mammal,Medium,Fur,Water,Omnivore,Nocturnal
+Invertebrate,Medium,Soft Body,Land,Carnivore,Diurnal
+Amphibian,Medium,Moist Skin,Water,Carnivore,Nocturnal
+Invertebrate,Medium,Exoskeleton,Land,Herbivore,Nocturnal
+Reptile,Small,Scales,Water,Omnivore,Diurnal
+Amphibian,Medium,Moist Skin,Water,Carnivore,Nocturnal
+Amphibian,Small,Moist Skin,Water,Omnivore,Nocturnal
+Fish,Medium,Scales,Water,Herbivore,Diurnal
+Amphibian,Small,Moist Skin,Water,Carnivore,Diurnal
+Fish,Small,Scales,Water,Carnivore,Nocturnal
+Mammal,Medium,Fur,Land,Herbivore,Diurnal
+Bird,Small,Feathers,Air,Herbivore,Nocturnal
+Fish,Medium,Scales,Water,Carnivore,Diurnal
+Bird,Medium,Feathers,Air,Herbivore,Diurnal
+Fish,Small,Scales,Water,Omnivore,Diurnal
+Mammal,Small,Fur,Water,Herbivore,Diurnal
+Invertebrate,Small,Exoskeleton,Water,Herbivore,Diurnal
+Amphibian,Small,Moist Skin,Water,Omnivore,Nocturnal
+Mammal,Large,Fur,Water,Omnivore,Nocturnal
+Amphibian,Small,Moist Skin,Water,Carnivore,Nocturnal
+Reptile,Large,Scales,Water,Carnivore,Nocturnal
+Fish,Medium,Scales,Water,Carnivore,Diurnal
+Mammal,Small,Fur,Land,Carnivore,Diurnal
+Bird,Large,Feathers,Air,Carnivore,Nocturnal
+Amphibian,Small,Moist Skin,Water,Carnivore,Nocturnal
+Reptile,Small,Scales,Water,Herbivore,Nocturnal
+Mammal,Large,Fur,Land,Omnivore,Diurnal
+Invertebrate,Tiny,Exoskeleton,Land,Herbivore,Diurnal
+Invertebrate,Small,Soft Body,Water,Herbivore,Diurnal
+Mammal,Large,Fur,Water,Herbivore,Diurnal
+Amphibian,Small,Moist Skin,Water,Carnivore,Diurnal
+Mammal,Small,Fur,Water,Carnivore,Nocturnal
+Invertebrate,Tiny,Soft Body,Water,Omnivore,Nocturnal
+Fish,Medium,Scales,Water,Carnivore,Nocturnal
+Mammal,Large,Fur,Land,Omnivore,Diurnal
+Bird,Large,Feathers,Air,Carnivore,Nocturnal
+Fish,Large,Scales,Water,Carnivore,Nocturnal
+Bird,Small,Feathers,Air,Herbivore,Nocturnal
+Mammal,Small,Fur,Land,Omnivore,Nocturnal
+Amphibian,Small,Moist Skin,Water,Carnivore,Diurnal
+Amphibian,Medium,Moist Skin,Water,Carnivore,Nocturnal
+Fish,Medium,Scales,Water,Omnivore,Nocturnal
+Mammal,Large,Fur,Land,Herbivore,Nocturnal
+Bird,Small,Feathers,Air,Herbivore,Nocturnal
+Bird,Medium,Feathers,Air,Herbivore,Nocturnal
+Bird,Small,Feathers,Air,Herbivore,Nocturnal
+Fish,Medium,Scales,Water,Omnivore,Nocturnal
+Fish,Small,Scales,Water,Omnivore,Nocturnal
+Mammal,Large,Fur,Water,Carnivore,Nocturnal
+Fish,Medium,Scales,Water,Herbivore,Nocturnal
+Reptile,Large,Scales,Water,Omnivore,Diurnal
+Invertebrate,Small,Soft Body,Land,Omnivore,Diurnal
+Mammal,Medium,Fur,Land,Carnivore,Nocturnal
+Mammal,Medium,Fur,Land,Herbivore,Diurnal
+Fish,Large,Scales,Water,Herbivore,Diurnal
+Invertebrate,Medium,Soft Body,Water,Herbivore,Diurnal
+Invertebrate,Medium,Exoskeleton,Land,Omnivore,Nocturnal
+Reptile,Large,Scales,Water,Omnivore,Diurnal
+Invertebrate,Tiny,Exoskeleton,Land,Carnivore,Diurnal
+Bird,Small,Feathers,Air,Carnivore,Nocturnal
+Mammal,Large,Fur,Water,Carnivore,Diurnal
+Bird,Large,Feathers,Air,Herbivore,Nocturnal
+Amphibian,Small,Moist Skin,Water,Carnivore,Diurnal
+Invertebrate,Small,Soft Body,Water,Carnivore,Nocturnal
+Bird,Medium,Feathers,Air,Carnivore,Diurnal
+Mammal,Medium,Fur,Land,Herbivore,Diurnal
+Reptile,Large,Scales,Water,Carnivore,Nocturnal
+Fish,Large,Scales,Water,Carnivore,Diurnal
+Reptile,Medium,Scales,Land,Carnivore,Nocturnal
+Invertebrate,Small,Exoskeleton,Water,Carnivore,Nocturnal
+Fish,Small,Scales,Water,Omnivore,Nocturnal
+Bird,Small,Feathers,Air,Omnivore,Nocturnal
+Bird,Small,Feathers,Air,Herbivore,Diurnal
+Bird,Small,Feathers,Air,Omnivore,Nocturnal
+Fish,Medium,Scales,Water,Omnivore,Nocturnal
+Bird,Large,Feathers,Air,Carnivore,Diurnal
+Invertebrate,Tiny,Exoskeleton,Water,Omnivore,Nocturnal
+Mammal,Medium,Fur,Water,Carnivore,Diurnal
+Amphibian,Medium,Moist Skin,Water,Carnivore,Diurnal
+Invertebrate,Tiny,Exoskeleton,Land,Herbivore,Nocturnal
+Bird,Small,Feathers,Air,Omnivore,Diurnal
+Amphibian,Small,Moist Skin,Water,Omnivore,Nocturnal
+Fish,Small,Scales,Water,Omnivore,Nocturnal
+Mammal,Small,Fur,Land,Omnivore,Nocturnal
+Reptile,Medium,Scales,Water,Carnivore,Nocturnal
+Mammal,Small,Fur,Land,Omnivore,Nocturnal
+Amphibian,Medium,Moist Skin,Water,Omnivore,Nocturnal
+Amphibian,Small,Moist Skin,Water,Carnivore,Nocturnal
+Reptile,Small,Scales,Land,Carnivore,Diurnal
+Mammal,Large,Fur,Water,Omnivore,Diurnal
+Reptile,Small,Scales,Water,Omnivore,Nocturnal
+Bird,Large,Feathers,Air,Omnivore,Nocturnal
+Mammal,Large,Fur,Land,Omnivore,Nocturnal
+Invertebrate,Tiny,Exoskeleton,Water,Carnivore,Diurnal
+Reptile,Large,Scales,Land,Herbivore,Diurnal
+Reptile,Small,Scales,Water,Carnivore,Diurnal
+Bird,Large,Feathers,Air,Herbivore,Diurnal
+Amphibian,Small,Moist Skin,Water,Omnivore,Nocturnal
+Bird,Small,Feathers,Air,Herbivore,Diurnal
+Amphibian,Small,Moist Skin,Water,Carnivore,Nocturnal
+Mammal,Large,Fur,Land,Omnivore,Diurnal
+Mammal,Small,Fur,Water,Herbivore,Nocturnal
+Bird,Large,Feathers,Air,Carnivore,Diurnal
+Reptile,Large,Scales,Land,Omnivore,Diurnal
+Reptile,Small,Scales,Land,Omnivore,Diurnal
+Reptile,Medium,Scales,Land,Carnivore,Nocturnal
+Fish,Small,Scales,Water,Omnivore,Nocturnal
+Bird,Medium,Feathers,Air,Carnivore,Nocturnal
+Fish,Small,Scales,Water,Herbivore,Nocturnal
+Amphibian,Small,Moist Skin,Water,Omnivore,Diurnal
+Fish,Small,Scales,Water,Omnivore,Diurnal
+Fish,Medium,Scales,Water,Omnivore,Nocturnal
+Reptile,Medium,Scales,Land,Herbivore,Diurnal
+Amphibian,Medium,Moist Skin,Water,Carnivore,Diurnal
+Invertebrate,Medium,Soft Body,Water,Herbivore,Diurnal
+Amphibian,Small,Moist Skin,Water,Omnivore,Diurnal
+Invertebrate,Small,Soft Body,Water,Herbivore,Nocturnal
+Amphibian,Medium,Moist Skin,Water,Carnivore,Nocturnal
+Fish,Medium,Scales,Water,Herbivore,Nocturnal
+Amphibian,Small,Moist Skin,Water,Omnivore,Nocturnal
+Invertebrate,Tiny,Exoskeleton,Land,Herbivore,Diurnal
+Bird,Large,Feathers,Air,Carnivore,Nocturnal
+Reptile,Large,Scales,Land,Herbivore,Diurnal
+Mammal,Medium,Fur,Land,Omnivore,Nocturnal
+Mammal,Small,Fur,Water,Herbivore,Nocturnal
+Amphibian,Small,Moist Skin,Water,Omnivore,Nocturnal
+Reptile,Small,Scales,Land,Herbivore,Diurnal
+Bird,Large,Feathers,Air,Omnivore,Nocturnal
+Amphibian,Small,Moist Skin,Water,Carnivore,Nocturnal
+Amphibian,Medium,Moist Skin,Water,Omnivore,Diurnal
+Reptile,Medium,Scales,Water,Carnivore,Diurnal
+Invertebrate,Tiny,Exoskeleton,Water,Carnivore,Nocturnal
+Invertebrate,Tiny,Exoskeleton,Water,Herbivore,Nocturnal
+Reptile,Medium,Scales,Water,Carnivore,Diurnal
+Mammal,Large,Fur,Water,Carnivore,Nocturnal
+Mammal,Large,Fur,Land,Carnivore,Nocturnal
+Fish,Large,Scales,Water,Carnivore,Diurnal
+Bird,Medium,Feathers,Air,Carnivore,Nocturnal
+Reptile,Medium,Scales,Water,Herbivore,Diurnal
+Bird,Medium,Feathers,Air,Carnivore,Diurnal
+Bird,Large,Feathers,Air,Herbivore,Diurnal
+Fish,Small,Scales,Water,Herbivore,Diurnal
+Reptile,Small,Scales,Land,Herbivore,Diurnal
+Amphibian,Medium,Moist Skin,Water,Omnivore,Diurnal
+Mammal,Medium,Fur,Land,Carnivore,Nocturnal
+Mammal,Large,Fur,Land,Omnivore,Nocturnal
+Bird,Small,Feathers,Air,Herbivore,Nocturnal
+Amphibian,Medium,Moist Skin,Water,Omnivore,Nocturnal
+Bird,Small,Feathers,Air,Carnivore,Nocturnal
+Reptile,Large,Scales,Water,Herbivore,Diurnal
+Amphibian,Medium,Moist Skin,Water,Carnivore,Nocturnal
+Invertebrate,Small,Exoskeleton,Land,Herbivore,Nocturnal
+Bird,Small,Feathers,Air,Carnivore,Nocturnal
+Amphibian,Small,Moist Skin,Water,Omnivore,Nocturnal
+Invertebrate,Tiny,Exoskeleton,Water,Omnivore,Diurnal

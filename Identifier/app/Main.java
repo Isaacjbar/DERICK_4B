@@ -1,8 +1,3 @@
-import classifier.KNNClassifier;
-import model.Node;
-import structures.BinaryTree;
-import utils.Trainer;
-import model.DataGenerator;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"> <!-- Cambiado el idioma a español -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 <body>
 
   <!-- Fondo y olas animadas -->
-  <div class="background-container">
+  <div class="background-container" aria-hidden="true">
     <div class="wave-container">
       <div class="wave left"></div>
       <div class="wave right"></div>
@@ -17,78 +17,79 @@
   </div>
 
   <!-- Contenedor principal -->
-  <div class="container">
+  <main class="container">
     <!-- Título -->
-    <h1 class="title-co">Identificador de Criaturas por KNN</h1>
+    <header>
+      <h1 class="title-co">Identificador de Criaturas por KNN</h1>
+    </header>
 
-    <!-- Botones -->
-    <div class="buttons">
-      <button id="crear-criatura-btn">Crear criatura</button>
-      <button id="entrenar-modelo-btn">Entrenar modelo</button>
-      <button id="descargar-csv-btn">Descargar CSV</button>
-    </div>
+    <!-- Botones de acción -->
+    <section class="buttons">
+      <button id="crear-criatura-btn" aria-label="Abrir formulario para crear una criatura">Crear criatura</button>
+      <button id="entrenar-modelo-btn" aria-label="Entrenar el modelo con datos existentes">Entrenar modelo</button>
+      <button id="descargar-csv-btn" aria-label="Descargar los datos en formato CSV">Descargar CSV</button>
+    </section>
 
     <!-- Modal del formulario Criatura -->
-    <div id="formulario-criatura" class="card hidden">
-      <div class="card-header">
+    <section id="formulario-criatura" class="card hidden" aria-hidden="true">
+      <header class="card-header">
         <h2>Formulario Criatura</h2>
-      </div>
-      <div class="card-content">
+      </header>
+      <form class="card-content">
         <div class="select-group">
           <label for="size">Tamaño</label>
-          <select id="size">
-            <option>Pequeño</option>
-            <option>Medio</option>
-            <option>Grande</option>
+          <select id="size" name="size">
+            <option value="Small">Pequeño</option>
+            <option value="Medium">Medio</option>
+            <option value="Large">Grande</option>
           </select>
         </div>
         <div class="select-group">
           <label for="skin-type">Tipo de piel</label>
-          <select id="skin-type">
-            <option>Plumas</option>
-            <option>Escamas</option>
-            <option>Piel húmeda</option>
-            <option>Exoesqueleto</option>
-            <option>Cuerpo suave</option>
+          <select id="skin-type" name="skin-type">
+            <option value="Feathers">Plumas</option>
+            <option value="Scales">Escamas</option>
+            <option value="Moist Skin">Piel húmeda</option>
+            <option value="Exoskeleton">Exoesqueleto</option>
+            <option value="Soft Body">Cuerpo suave</option>
           </select>
         </div>
         <div class="select-group">
           <label for="habitat">Hábitat</label>
-          <select id="habitat">
-            <option>Aire</option>
-            <option>Tierra</option>
-            <option>Agua</option>
+          <select id="habitat" name="habitat">
+            <option value="Air">Aire</option>
+            <option value="Land">Tierra</option>
+            <option value="Water">Agua</option>
           </select>
         </div>
         <div class="select-group">
           <label for="diet">Dieta</label>
-          <select id="diet">
-            <option>Herbívoro</option>
-            <option>Carnívoro</option>
-            <option>Omnívoro</option>
+          <select id="diet" name="diet">
+            <option value="Herbivore">Herbívoro</option>
+            <option value="Carnivore">Carnívoro</option>
+            <option value="Omnivore">Omnívoro</option>
           </select>
         </div>
         <div class="select-group">
           <label for="behavior">Comportamiento</label>
-          <select id="behavior">
-            <option>Nocturnal</option>
-            <option>Diurno</option>
+          <select id="behavior" name="behavior">
+            <option value="Nocturnal">Nocturno</option>
+            <option value="Diurnal">Diurno</option>
           </select>
         </div>
-      </div>
-      <div class="card-footer">
-        <button class="btn-outline" id="cancelar-btn">Cancelar</button>
-        <button class="btn-primary">Crear</button>
-      </div>
-    </div>
+        <div class="card-footer">
+          <button type="button" class="btn-outline" id="cancelar-btn">Cancelar</button>
+          <button type="submit" class="btn-primary">Crear</button>
+        </div>
+      </form>
+    </section>
 
     <!-- Sección donde se agregarán las tarjetas -->
-    <div id="creaturas-list" class="creaturas-list">
+    <section id="creaturas-list" class="creaturas-list" aria-live="polite">
       <!-- Aquí se agregarán las tarjetas con las criaturas registradas -->
-    </div>
-  </div>
+    </section>
+  </main>
 
   <script src="script.js"></script>
-
 </body>
 </html>
