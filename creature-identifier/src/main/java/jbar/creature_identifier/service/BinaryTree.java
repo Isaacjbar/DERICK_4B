@@ -23,14 +23,19 @@ public class BinaryTree {
     }
 
     private Node addRecursive(Node current, Animal animal) {
+        // Si el árbol está vacío, devuelve un nuevo nodo
         if (current == null) {
             return new Node(animal);
         }
-        // Comparación personalizada (puedes usar propiedades como tamaño o dieta para organizar)
-        if (animal.getSize().compareTo(current.animal.getSize()) < 0) {
+
+        // Compara el tamaño del animal y decide a qué lado agregarlo
+        if (animal.getSize() < current.animal.getSize()) {
             current.left = addRecursive(current.left, animal);
-        } else {
+        } else if (animal.getSize() > current.animal.getSize()) {
             current.right = addRecursive(current.right, animal);
+        } else {
+            // Si el tamaño es el mismo, no agregamos duplicados
+            return current;
         }
         return current;
     }

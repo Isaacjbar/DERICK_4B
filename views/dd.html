@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Campo Hidden</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form action="/procesar-registro" method="post">
+        <!-- Campo visible -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br><br>
+
+        <!-- Campo visible -->
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        <br><br>
+
+        <!-- Campo hidden -->
+        <label type="hidden" name="origen" value="1">
+
+        <!-- Botón de envío -->
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 
 public class KnnClassifier {
 
-    public String classify(Animal input, List<Animal> trainingSet, int k) {
+    public int classify(Animal input, List<Animal> trainingSet, int k) {
         // Calcular distancias entre el input y cada animal en el conjunto de entrenamiento
         List<AnimalDistance> distances = trainingSet.stream()
                 .map(animal -> new AnimalDistance(animal, calculateDistance(input, animal)))
@@ -17,7 +17,8 @@ public class KnnClassifier {
                 .collect(Collectors.toList());
 
         // Tomar los k vecinos más cercanos
-        List<String> nearestSpecies = distances.subList(0, k).stream()
+        List<Integer> nearestSpecies = distances.stream()
+                .limit(k)
                 .map(animalDistance -> animalDistance.getAnimal().getSpecie())
                 .collect(Collectors.toList());
 
@@ -27,7 +28,7 @@ public class KnnClassifier {
                 .entrySet().stream()
                 .max(Comparator.comparingLong(Map.Entry::getValue))
                 .map(Map.Entry::getKey)
-                .orElse("Unknown");
+                .orElse(-1); // Retorna -1 si no hay consenso
     }
 
     public List<AnimalDistance> getNearestNeighbors(Animal input, List<Animal> trainingSet, int k) {
@@ -40,14 +41,24 @@ public class KnnClassifier {
     }
 
     private double calculateDistance(Animal a, Animal b) {
-        // Implementar una métrica de distancia (e.g., distancia euclidiana)
-        int sizeDifference = Math.abs(a.getSize().compareTo(b.getSize()));
-        int skinDifference = a.getSkinType().equals(b.getSkinType()) ? 0 : 1;
-        int habitatDifference = a.getHabitat().equals(b.getHabitat()) ? 0 : 1;
-        int dietDifference = a.getDiet().equals(b.getDiet()) ? 0 : 1;
-        int behaviorDifference = a.getBehavior().equals(b.getBehavior()) ? 0 : 1;
+        // Calcular una métrica de distancia entre los dos animales
+        double sizeDifference = Math.abs(a.getSize() - b.getSize());
 
-        return sizeDifference + skinDifference + habitatDifference + dietDifference + behaviorDifference;
+        // Sumar las diferencias binarias
+        int furDifference = a.getHasFur() == b.getHasFur() ? 0 : 1;
+        int aquaticDifference = a.getIsAquatic() == b.getIsAquatic() ? 0 : 1;
+        int carnivoreDifference = a.getIsCarnivore() == b.getIsCarnivore() ? 0 : 1;
+        int nocturnalDifference = a.getIsNocturnal() == b.getIsNocturnal() ? 0 : 1;
+        int wingsDifference = a.getHasWings() == b.getHasWings() ? 0 : 1;
+        int domesticatedDifference = a.getIsDomesticated() == b.getIsDomesticated() ? 0 : 1;
+        int endangeredDifference = a.getIsEndangered() == b.getIsEndangered() ? 0 : 1;
+        int clawsDifference = a.getHasClaws() == b.getHasClaws() ? 0 : 1;
+        int flyDifference = a.getCanFly() == b.getCanFly() ? 0 : 1;
+
+        // La distancia es la suma de todas las diferencias
+        return sizeDifference + furDifference + aquaticDifference + carnivoreDifference +
+                nocturnalDifference + wingsDifference + domesticatedDifference + endangeredDifference +
+                clawsDifference + flyDifference;
     }
 
     public static class AnimalDistance {

@@ -37,46 +37,73 @@
       </header>
       <form class="card-content">
         <div class="select-group">
-          <label for="size">Tamaño</label>
-          <select id="size" name="size">
-            <option value="Small">Pequeño</option>
-            <option value="Medium">Medio</option>
-            <option value="Large">Grande</option>
-          </select>
+          <label for="size">Tamaño (en metros)</label>
+          <input type="number" id="size" name="size" step="0.01" min="0.01" max="2.9" required>
         </div>
+        
+        <!-- Propiedad: Tipo de piel (selección entre 0 y 1) -->
         <div class="select-group">
-          <label for="skin-type">Tipo de piel</label>
-          <select id="skin-type" name="skin-type">
-            <option value="Feathers">Plumas</option>
-            <option value="Scales">Escamas</option>
-            <option value="Moist Skin">Piel húmeda</option>
-            <option value="Exoskeleton">Exoesqueleto</option>
-            <option value="Soft Body">Cuerpo suave</option>
-          </select>
+          <label for="hasFur">¿Tiene pelo?</label>
+          <input type="radio" id="hasFur1" name="hasFur" value="1"> Sí
+          <input type="radio" id="hasFur0" name="hasFur" value="0" checked> No
         </div>
+
+        <!-- Propiedad: ¿Es acuático? -->
         <div class="select-group">
-          <label for="habitat">Hábitat</label>
-          <select id="habitat" name="habitat">
-            <option value="Air">Aire</option>
-            <option value="Land">Tierra</option>
-            <option value="Water">Agua</option>
-          </select>
+          <label for="isAquatic">¿Es acuático?</label>
+          <input type="radio" id="isAquatic1" name="isAquatic" value="1"> Sí
+          <input type="radio" id="isAquatic0" name="isAquatic" value="0" checked> No
         </div>
+
+        <!-- Propiedad: ¿Es carnívoro? -->
         <div class="select-group">
-          <label for="diet">Dieta</label>
-          <select id="diet" name="diet">
-            <option value="Herbivore">Herbívoro</option>
-            <option value="Carnivore">Carnívoro</option>
-            <option value="Omnivore">Omnívoro</option>
-          </select>
+          <label for="isCarnivore">¿Es carnívoro?</label>
+          <input type="radio" id="isCarnivore1" name="isCarnivore" value="1"> Sí
+          <input type="radio" id="isCarnivore0" name="isCarnivore" value="0" checked> No
         </div>
+
+        <!-- Propiedad: ¿Es nocturno? -->
         <div class="select-group">
-          <label for="behavior">Comportamiento</label>
-          <select id="behavior" name="behavior">
-            <option value="Nocturnal">Nocturno</option>
-            <option value="Diurnal">Diurno</option>
-          </select>
+          <label for="isNocturnal">¿Es nocturno?</label>
+          <input type="radio" id="isNocturnal1" name="isNocturnal" value="1"> Sí
+          <input type="radio" id="isNocturnal0" name="isNocturnal" value="0" checked> No
         </div>
+
+        <!-- Propiedad: ¿Tiene alas? -->
+        <div class="select-group">
+          <label for="hasWings">¿Tiene alas?</label>
+          <input type="radio" id="hasWings1" name="hasWings" value="1"> Sí
+          <input type="radio" id="hasWings0" name="hasWings" value="0" checked> No
+        </div>
+
+        <!-- Propiedad: ¿Está domesticado? -->
+        <div class="select-group">
+          <label for="isDomesticated">¿Está domesticado?</label>
+          <input type="radio" id="isDomesticated1" name="isDomesticated" value="1"> Sí
+          <input type="radio" id="isDomesticated0" name="isDomesticated" value="0" checked> No
+        </div>
+
+        <!-- Propiedad: ¿Está en peligro? -->
+        <div class="select-group">
+          <label for="isEndangered">¿Está en peligro?</label>
+          <input type="radio" id="isEndangered1" name="isEndangered" value="1"> Sí
+          <input type="radio" id="isEndangered0" name="isEndangered" value="0" checked> No
+        </div>
+
+        <!-- Propiedad: ¿Tiene garras? -->
+        <div class="select-group">
+          <label for="hasClaws">¿Tiene garras?</label>
+          <input type="radio" id="hasClaws1" name="hasClaws" value="1"> Sí
+          <input type="radio" id="hasClaws0" name="hasClaws" value="0" checked> No
+        </div>
+
+        <!-- Propiedad: ¿Puede volar? -->
+        <div class="select-group">
+          <label for="canFly">¿Puede volar?</label>
+          <input type="radio" id="canFly1" name="canFly" value="1"> Sí
+          <input type="radio" id="canFly0" name="canFly" value="0" checked> No
+        </div>
+
         <div class="card-footer">
           <button type="button" class="btn-outline" id="cancelar-btn">Cancelar</button>
           <button type="submit" class="btn-primary">Crear</button>
